@@ -1,13 +1,30 @@
 # ZGradientView
 
-[![CI Status](https://img.shields.io/travis/sxudan/ZGradientView.svg?style=flat)](https://travis-ci.org/sxudan/ZGradientView)
-[![Version](https://img.shields.io/cocoapods/v/ZGradientView.svg?style=flat)](https://cocoapods.org/pods/ZGradientView)
-[![License](https://img.shields.io/cocoapods/l/ZGradientView.svg?style=flat)](https://cocoapods.org/pods/ZGradientView)
-[![Platform](https://img.shields.io/cocoapods/p/ZGradientView.svg?style=flat)](https://cocoapods.org/pods/ZGradientView)
+<p><img src="https://i.imgur.com/ab433Va.png" width="300px"/></p>
 
-## Example
+## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+# Programmatically
+
+    @IBOutlet weak var gradientView4: ZGradientView!
+    @IBOutlet weak var gradientView3: ZGradientView!
+    @IBOutlet weak var gradientView2: ZGradientView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        gradientView2.colors = [UIColor(hex: "#800080ff")!.cgColor, UIColor(hex: "#ffc0cbff")!.cgColor]
+        gradientView3.colors = [UIColor(hex: "#00F260ff")!.cgColor, UIColor(hex: "#0575E6ff")!.cgColor]
+        gradientView4.colors = [UIColor(hex: "#8A2387ff")!.cgColor, UIColor(hex: "#E94057ff")!.cgColor, UIColor(hex: "#F27121ff")!.cgColor]
+        
+        gradientView4.locations = [0.15, 0.7, 1.0]
+        gradientView2.diagonalMode = true
+        gradientView4.horizontalMode = true
+    }
+
+# Using UIView
+
+<p><img src="https://i.imgur.com/VztEMPc.png" width="300px"/></p>
+<p>Note: For two colors make center color default or clear </p>
 
 ## Requirements
 
