@@ -22,7 +22,7 @@ pod 'ZGradientView'
 
 ## Author
 
-sxudan, sudan.suwal@spiralogics.com
+sudayn, sudosuwal@gmail.com
 
 ## License
 
