@@ -6,6 +6,8 @@
 
 # Programmatically
 
+    import ZGradientView
+
     @IBOutlet weak var gradientView4: ZGradientView!
     @IBOutlet weak var gradientView3: ZGradientView!
     @IBOutlet weak var gradientView2: ZGradientView!
